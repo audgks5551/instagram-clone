@@ -4,6 +4,8 @@
     {{ question.content }}
 </div>
 
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 <h5>{{ question.answer_set.count }}개의 답변이 있습니다.</h5>
 <div>
     <ul>
